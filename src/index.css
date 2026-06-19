@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", var(--font-sans);
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  /* Deep cosmic dark colors */
+  --color-cosmic-950: #020617;
+  --color-cosmic-900: #0f172a;
+  --color-cosmic-800: #1e293b;
+  --color-cosmic-700: #334155;
+  --color-cosmic-400: #94a3b8;
+  --color-accent-pink: #ec4899;
+}
+
+/* Custom smooth dark scrolls */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-cosmic-950);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-cosmic-800);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-cosmic-700);
+}
+
+/* Glassmorphism elements */
+.glass-panel {
+  background: rgba(15, 23, 42, 0.45);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glass-panel-glow {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1), 
+              0 0 20px rgba(99, 102, 241, 0.08); /* faint indigo glow */
+}
+
+/* Pulsing cyber dot */
+@keyframes cyber-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.5);
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(16, 185, 129, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+  }
+}
+
+.status-pulse-green {
+  animation: cyber-pulse 2s infinite;
+}

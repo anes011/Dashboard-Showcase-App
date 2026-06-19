@@ -1,0 +1,6 @@
+{
+  "name": "Dark Admin Dashboard",
+  "description": "A premium, fully interactive Dark Admin Dashboard template featuring statistics, user management, billing details with interactive credit card, marketing campaign planner, custom profile settings, and beautiful charts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
